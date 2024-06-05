@@ -15,7 +15,8 @@ for success in mission_success:
 print ("Number of successful missions:", successful_missions)
 
 success_rate = successful_missions / total_number_missions * 100
-print(f"This is the value{success_rate:.2f}%")
+success_rate_rounded=round(success_rate,2)
+print ("Success rate:", success_rate_rounded,"%")
 
 for y in range(total_number_missions):
     if mission_years[y] < 2000:
